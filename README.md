@@ -1,6 +1,7 @@
 # Tongji-GPA
+![](https://raw.githubusercontent.com/wlh320/Tongji-GPA/master/title.png)
 
-##简洁
+##简介
 同济大学[选课网](http://xuanke.tongji.edu.cn)爬成绩
 
 ##使用方法
@@ -12,3 +13,6 @@
 为方便使用，exe使用pyinstaller打包.
 
 Warning：手边没有32位机器，exe只提供64位版本.
+
+##TODO
+选课网最前面一段跳转的逻辑还没理清楚
