@@ -2,17 +2,29 @@
 ![](https://raw.githubusercontent.com/wlh320/Tongji-GPA/master/title.png)
 
 ##简介
-同济大学[选课网](http://xuanke.tongji.edu.cn)爬成绩
+从[同济大学选课网](http://xuanke.tongji.edu.cn)爬取成绩
 
-##使用方法
-运行，输入学号密码，将爬到的成绩在当前目录生成一个grade.html
+跳过验证码，输入学号密码立刻查看成绩╮(╯▽╰)╭
 
-##打包
-包含python脚本和exe运行程序.
+##使用
+1. windows可直接运行exe / linux 运行python脚本 / mac 没测试过，脚本应该能运行
+2. 输入学号密码
+2. 自动爬取成绩并保存在当前目录 grade.html
+3. 自动打开文件查看成绩
 
-为方便使用，exe使用pyinstaller打包.
+##更新
+###v1.1
+- 增加错误提示
+- 自动打开网页
+- 用Pyinstaller打包成了一个exe文件，方便小白使用
 
-Warning：手边没有32位机器，exe只提供64位版本.
+###v1.0 
+- 初始版本
+
+##FAQ
+1. 密码输入是没有回显的，并不是没输进去
+2. exe只打包了64位版本，32位暂时不支持
 
 ##TODO
-选课网最前面一段跳转的逻辑还没理清楚
+- 多找几个人测试测试
+- 没出大问题基本不打算更新了
