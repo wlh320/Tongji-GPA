@@ -31,7 +31,7 @@ def saml_login(session):
     """
     # 1
     base_url = 'https://ids.tongji.edu.cn:8443'
-    init_url = 'http://xuanke.tongji.edu.cn:9321/oiosaml/saml/login'
+    init_url = 'http://xuanke.tongji.edu.cn:443/oiosaml/saml/login'
     res = session.get(init_url)
 
     # 2
@@ -58,7 +58,7 @@ def saml_login(session):
     res = session.get(sid_url)
 
     # 6
-    assert_url = "http://xuanke.tongji.edu.cn:9321/oiosaml/saml/SAMLAssertionConsumer"
+    assert_url = "http://xuanke.tongji.edu.cn:443/oiosaml/saml/SAMLAssertionConsumer"
     data = {
         'SAMLResponse': re.findall(r'value="(.*)"/>', str(res.content))[0]
     }
